@@ -135,7 +135,7 @@ public class Main2_var2 {
         rim1.put(100, "C");
 
         if (a.length != 3) {
-            throw new Exception("Не соответстует требованиям 138");
+            throw new Exception("Не соответстует требованиям");
         }
         if ((a[0].equals("0") || a[0].equals("1") || a[0].equals("2") || a[0].equals("3") || a[0].equals("4") || a[0].equals("5") || a[0].equals("6") || a[0].equals("7") || a[0].equals("8") || a[0].equals("9") || a[0].equals("10")) && (a[2].equals("0") || a[2].equals("1") || a[2].equals("2") || a[2].equals("3") || a[2].equals("4") || a[2].equals("5") || a[2].equals("6") || a[2].equals("7") || a[2].equals("8") || a[2].equals("9") || a[2].equals("10")) ) {
             ca = Integer.parseInt(a[0]);
@@ -146,7 +146,7 @@ public class Main2_var2 {
                 cb = rim.get(a[2]).intValue();
                 tf = true;
             } else {
-                throw new Exception("Не соответстует требованиям 149");
+                throw new Exception("Не соответстует требованиям");
             }
         }
 
@@ -164,13 +164,13 @@ public class Main2_var2 {
                 otvet = ca * cb;
                 break;
             default:
-                throw new Exception("Не соответстует требованиям 167");
+                throw new Exception("Не соответстует требованиям");
 
         }
 
         if (tf) {
             if (otvet < 0) {
-                throw new Exception("Не соответстует требованиям 173");
+                throw new Exception("Не соответстует требованиям");
             }
             return rim1.get(otvet);
         }
